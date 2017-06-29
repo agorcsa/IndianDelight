@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Indian Delight</string>
+    <string name="titleText">Indian Delight</string>
+    <string name="rateMe">Rate Me</string>
+    <string name="button">SUBMIT</string>
+    <string name="explanation">Indian Spice Shop</string>
+    <string name="description">Shop a wide variety of quality authentic indian spices.</string>
+    <string name="locationName">Indian Delight</string>
+    <string name="addressline1">Wesselenyi ut, 36</string>
+    <string name="addressline2">1072 Budapest, Hungary</string>
+    <string name="scheduleWorkingDays">Monday to Friday\u003A\ 10.00 - 19.00</string>
+    <string name="scheduleSaturday">Saturday: 10.00 - 14.00</string>
+    <string name="scheduleSunday">Sunday: closed</string>
+</resources>

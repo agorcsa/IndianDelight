@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.indiandelight.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.00"
+        android:id="@+id/indianspices"
+        android:src="@drawable/indianspices"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/yellow"
+        android:paddingLeft="@dimen/paddingLeft">
+
+        <TextView
+            style="@style/Yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IndianDelight"
+            android:text="@string/titleText"
+            android:paddingTop="@dimen/paddingTopTitle"
+            android:paddingBottom="@dimen/paddingBottom"
+            android:paddingRight="@dimen/paddingRight"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RateMe"
+            android:text="@string/rateMe"
+            android:textSize="@dimen/textSizeMedium"/>
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="4.5"
+            android:theme="@style/RatingBar"/>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button"
+            android:textSize="@dimen/textSizeSmall"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explanation"
+            android:textSize="@dimen/textSizeMedium"
+            android:paddingTop="@dimen/paddingTopText"
+            android:paddingBottom="@dimen/paddingBottom"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lightBrown">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/telephone"
+            android:src="@drawable/call"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/star"
+            android:src="@drawable/star"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/shop"
+            android:src="@drawable/shop"
+            android:tag="https://www.indiandelight.co.nz"
+            android:onClick="openBrowser"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="@string/description"
+        android:background="@color/lightBrown"
+        android:paddingTop="@dimen/paddingTopText"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/lightBrown">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:src="@drawable/location"
+            android:paddingLeft="@dimen/paddingLeft"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/addressline1"
+                android:text="@string/locationName"
+                android:textSize="@dimen/textSizeMedium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/addressline2"
+                android:text="@string/addressline1"
+                android:layout_below="@id/addressline1"
+                android:textSize="@dimen/textSizeMedium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/addressline3"
+                android:text="@string/addressline2"
+                android:layout_below="@id/addressline2"
+                android:textSize="@dimen/textSizeMedium"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/lightBrown">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedule"
+            android:src="@drawable/schedule"
+            android:paddingLeft="@dimen/paddingLeft"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workingDays"
+                android:text="@string/scheduleWorkingDays"
+                android:textSize="@dimen/textSizeMedium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scheduleSaturday"
+                android:id="@+id/Saturday"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSizeMedium"
+                android:layout_below="@id/workingDays"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scheduleSunday"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSizeMedium"
+                android:layout_below="@id/Saturday"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/lightBrown"
+        android:paddingLeft="@dimen/paddingLeft">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:src="@drawable/email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="indian.delight@gmail.com"
+            android:textSize="@dimen/textSizeMedium"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/paddingLeft"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/lightBrown"
+        android:paddingLeft="@dimen/paddingLeft">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment"
+            android:src="@drawable/payment"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/methods"
+            android:src="@drawable/methods"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/payment"
+            android:layout_toEndOf="@+id/payment"
+            android:paddingBottom="@dimen/paddingBottom"/>
+    </RelativeLayout>
+
+</LinearLayout>
